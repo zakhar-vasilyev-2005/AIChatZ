@@ -1,0 +1,17 @@
+{
+	"name": "AIChatZ",
+	"version": "1.0.0",
+	"description": "",
+	"license": "MIT",
+	"type": "commonjs",
+	"main": "index.js",
+	"scripts": {
+		"start": "electron ."
+	},
+	"devDependencies": {
+		"electron": "^40.6.1"
+	},
+	"allowScripts": {
+		"electron@40.6.1": true
+	}
+}

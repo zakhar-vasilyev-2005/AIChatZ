@@ -1,0 +1,257 @@
+
+body[data-theme="dark"] * {
+	/* Цветовая система */
+	--color-core-primary: #1a1a1a;
+	--color-core-secondary: #ff0000;
+	--color-core-dropdown-icon: #8f8f8f;
+	--color-core-accent: #55a4ff;
+	--color-core-chat-header-button: #55a4ff;
+	--color-core-chat-header-button-impossible: #8f8f8f;
+	--color-bg-chat-header-button: transparent;
+	--color-bg-chat-header: #f2f2f7;
+	--color-bg-background: #f5f5f7;
+	--color-bg-dropdown: #f2f2f7;
+	--color-bg-dropdown-arrow: #f2f2f7;
+	--color-bg-hover: #dde6ff;
+	--color-bg-sidepane: #ffffff;
+	--color-bg-sidepane-chat: #ffffff;
+	--color-bg-chat-content: #ffffff;
+	--color-bg-ui-message-background: rgba(0,0,0,0.1);
+	--color-bg-ui-message: #ffffff;
+	--color-bg-ui-message-buttons: #f7f7fa;
+	--color-bg-ui-message-buttons-hover: #e5f0ff;
+	--color-bg-ui-message-danger: #ffe9e9;
+	--color-bg-ui-message-danger-hover: #ffd0d0;
+	--color-bg-chat-group: #e7e7e7;
+	--color-bg-user-message: #f0f7ff;
+	--color-bg-assistant-message: #ffffff;
+	--color-bg-system-message: #fff0ff;
+	--color-bg-message-buttons: #d1d1d6;
+	--color-bg-selected-chat: #cfdfff;
+	--color-bg-delete-hover: rgba(255,203,194,0.7);
+	--color-bg-chat-input-scrollbar: #f2f2f7;
+	--color-bg-chat-input-scrollbar-thumb: #e7e7e7;
+	--color-bg-chat-input-scrollbar-thumb-hover: #dde6ff;
+	--color-bg-chat-content-scrollbar-track: #f2f2f7;
+	--color-bg-chat-content-scrollbar-thumb: #e7e7e7;
+	--color-bg-chat-content-scrollbar-thumb-hover: #dde6ff;
+	--color-bg-chat-list-scrollbar-track: #f2f2f7;
+	--color-bg-chat-list-scrollbar-thumb: #e7e7e7;
+	--color-bg-chat-list-scrollbar-thumb-hover: #dde6ff;
+	--color-core-delete: #ff8686;
+	--color-core-delete-active: #ff5656;
+	--color-border-regular: #d1d1d6;
+	--color-border-light: #e5e5ea;
+	--color-border-ui-danger: #ffb0b0;
+	--color-scrollbar-thumb: #c1c1c1;
+	--color-scrollbar-thumb-hover: #a8a8a8;
+	--color-border-chat-input-separator: #e5e5ea;
+	--color-border-chat-input-textarea: #c1c1c6;
+	--color-border-chat-input-textarea-active: #55a4ff;
+	--color-border-settings-entry: #f8f8f8;
+	--color-border-settings-entry-button: rgba(0,0,0,0);
+	--color-border-settings-entry-button-selected: #d7e7ff;
+	--color-border-settings-entry-button-theme-dark: #373737;
+	--color-border-settings-entry-button-theme-light: #e7e7e7;
+	--color-border-settings-entry-button-theme-dark-hover: #527bc7;
+	--color-border-settings-entry-button-theme-light-hover: #d2e7f5;
+	--color-core-settings-theme-dark-primary: #505050;
+	--color-core-settings-theme-dark-secondary: #3f3f3f;
+	--color-core-settings-theme-light-primary: #f7f7f7;
+	--color-core-settings-theme-light-secondary: #dfdfdf;
+	--color-bg-settings-entry: #f5f5f5;
+	--color-bg-settings-entry-button: #f0f0f0;
+	--color-bg-settings-entry-button-hover: #dfefff;
+	--color-core-chat-input-send-button: #c1c1c6;
+	--color-core-chat-input-send-button-hover: #55a4ff;
+
+	/* Семейства шрифтов */
+	--font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+	
+	--font-size-footers: 10pt;
+	--font-size-base: 12pt;
+	--font-size-headers: 14pt;
+	--font-size-blank: 16pt;
+	
+	--text-color-dimmed: #8d8d8f;
+	--text-color-base: #1d1d1f;
+	
+	--line-height-base: 1.15;
+	--line-height-tight: 1.05;
+
+	--text-color-message-base: var(--text-color-base);
+	--font-family-message-base: var(--font-family-base);
+	--font-size-message-base: var(--font-size-base);
+	--font-weight-message-base: 400;
+	--font-style-message-base: normal;
+	--line-height-message-base: var(--line-height-base);
+
+	--text-color-chat-header: var(--text-color-base);
+	--font-family-chat-header: var(--font-family-base);
+	--font-size-chat-header: var(--font-size-base);
+	--font-weight-chat-header: 500;
+	--font-style-chat-header: normal;
+	--line-height-chat-header: var(--line-height-tight);
+
+	--text-color-ui-message-text: var(--text-color-base);
+	--font-family-ui-message-text: var(--font-family-base);
+	--font-size-ui-message-text: var(--font-size-headers);
+	--font-weight-ui-message-text: 370;
+	--font-style-ui-message-text: normal;
+	--line-height-ui-message-text: var(--line-height-base);
+
+	--text-color-ui-message-buttons: var(--text-color-base);
+	--font-family-ui-message-buttons: var(--font-family-base);
+	--font-size-ui-message-buttons: var(--font-size-base);
+	--font-weight-ui-message-buttons: 400;
+	--font-style-ui-message-buttons: normal;
+	--line-height-ui-message-buttons: var(--line-height-tight);
+
+	--text-color-ui-message-danger: var(--text-color-base);
+	--font-family-ui-message-danger: var(--font-family-base);
+	--font-size-ui-message-danger: var(--font-size-base);
+	--font-weight-ui-message-danger: 400;
+	--font-style-ui-message-danger: normal;
+	--line-height-ui-message-danger: var(--line-height-tight);
+
+	--text-color-ui-message-userinput: var(--text-color-base);
+	--font-family-ui-message-userinput: var(--font-family-base);
+	--font-size-ui-message-userinput: var(--font-size-base);
+	--font-weight-ui-message-userinput: 400;
+	--font-style-ui-message-userinput: normal;
+	--line-height-ui-message-userinput: var(--line-height-base);
+
+	--text-color-current-group: var(--text-color-base);
+	--font-family-current-group: var(--font-family-base);
+	--font-size-current-group: var(--font-size-base);
+	--font-weight-current-group: 500;
+	--font-style-current-group: normal;
+	--line-height-current-group: var(--line-height-tight);
+
+	--text-color-special-group: var(--text-color-base);
+	--font-family-special-group: var(--font-family-base);
+	--font-size-special-group: var(--font-size-base);
+	--font-weight-special-group: 400;
+	--font-style-special-group: italic;
+	--line-height-special-group: var(--line-height-tight);
+
+	--text-color-generic-group: var(--text-color-base);
+	--font-family-generic-group: var(--font-family-base);
+	--font-size-generic-group: var(--font-size-base);
+	--font-weight-generic-group: 400;
+	--font-style-generic-group: normal;
+	--line-height-generic-group: var(--line-height-tight);
+
+	--text-color-add-group: var(--text-color-base);
+	--font-family-add-group: var(--font-family-base);
+	--font-size-add-group: var(--font-size-base);
+	--font-weight-add-group: 400;
+	--font-style-add-group: italic;
+	--line-height-add-group: var(--line-height-tight);
+
+	--text-color-sidepane-chat-group: var(--text-color-base);
+	--font-family-sidepane-chat-group: var(--font-family-base);
+	--font-size-sidepane-chat-group: var(--font-size-base);
+	--font-weight-sidepane-chat-group: 400;
+	--font-style-sidepane-chat-group: normal;
+
+	--text-color-sidepane-chat: var(--text-color-base);
+	--font-family-sidepane-chat: var(--font-family-base);
+	--font-size-sidepane-chat: var(--font-size-base);
+	--font-weight-sidepane-chat: 400;
+	--font-style-sidepane-chat: normal;
+	--line-height-sidepane-chat: var(--line-height-tight);
+
+	--text-color-sidepane-chat-empty: var(--text-color-dimmed);
+	--font-family-sidepane-chat-empty: var(--font-family-base);
+	--font-size-sidepane-chat-empty: var(--font-size-base);
+	--font-weight-sidepane-chat-empty: 400;
+	--font-style-sidepane-chat-empty: italic;
+
+	--text-color-message-footers: var(--text-color-dimmed);
+	--font-family-message-footers: var(--font-family-base);
+	--font-size-message-footers: var(--font-size-footers);
+	--font-weight-message-footers: 400;
+	--font-style-message-footers: normal;
+	--line-height-message-footers: var(--line-height-tight);
+
+	--color-text-sidepane-no-chats-text: var(--text-color-dimmed);
+	--font-family-sidepane-no-chats-text: var(--font-family-base);
+	--font-size-sidepane-no-chats-text: var(--font-size-blank);
+	--font-weight-sidepane-no-chats-text: 400;
+	--font-style-sidepane-no-chats-text: italic;
+	--line-height-sidepane-no-chats-text: var(--line-height-tight);
+
+	--text-color-chat-input-textarea: var(--text-color-base);
+	--font-family-chat-input-textarea: var(--font-family-base);
+	--font-size-chat-input-textarea: var(--font-size-base);
+	--font-weight-chat-input-textarea: 400;
+	--font-style-chat-input-textarea: normal;
+	--line-height-chat-input-textarea: var(--line-height-base);
+
+	--text-color-chat-input-textarea-placeholder: #c1c1c6;
+	--font-family-chat-input-textarea-placeholder: var(--font-family-base);
+	--font-size-chat-input-textarea-placeholder: var(--font-size-base);
+	--font-weight-chat-input-textarea-placeholder: 400;
+	--font-style-chat-input-textarea-placeholder: normal;
+	--line-height-chat-input-textarea-placeholder: var(--line-height-base);
+
+	--text-color-settings-pane-text: var(--text-color-base);
+	--font-family-settings-pane-text: var(--font-family-base);
+	--font-size-settings-pane-text: var(--font-size-headers);
+	--font-weight-settings-pane-text: 500;
+	--font-style-settings-pane-text: normal;
+	--line-height-settings-pane-text: var(--line-height-tight);
+	
+	--text-color-settings-entry-text: var(--text-color-base);
+	--font-family-settings-entry-text: var(--font-family-base);
+	--font-size-settings-entry-text: var(--font-size-base);
+	--font-weight-settings-entry-text: 400;
+	--font-style-settings-entry-text: normal;
+	--line-height-settings-entry-text: var(--line-height-tight);
+	
+	--text-color-settings-langbutton-text: var(--text-color-base);
+	--font-family-settings-langbutton-text: var(--font-family-base);
+	--font-size-settings-langbutton-text: var(--font-size-base);
+	--font-weight-settings-langbutton-text: 600;
+	--font-style-settings-langbutton-text: normal;
+	--line-height-settings-langbutton-text: var(--line-height-tight);
+
+
+	/* Специфичные значения */
+	--border-thickness: max(2px, 0.051cm);
+	--width-sidepane: 8cm;
+	--width-sidepane-scrollbar: 0.3cm;
+	--width-chat-content-scrollbar: 0.3cm;
+	--width-chat-input-scrollbar: 0.4cm;
+	--chat-content-message-gap: 0.4cm;
+	--sidepane-padding-gap: 0.1cm;
+	--width-sidepane-item: calc(var(--width-sidepane) - calc(2 * var(--sidepane-padding-gap)) - calc(2 * var(--border-thickness)));
+	--sidepane-chat-gap: 0.08cm;
+	--sidepane-chat-min-height: 0.68cm;
+	--sidepane-header-dropdown-height: 1.4cm;
+	
+	/* Комбинации значений */
+	--border-primary: var(--border-thickness) solid var(--color-border-regular);
+	--border-secondary: var(--border-thickness) solid var(--color-border-light);
+	--border-accent: var(--border-thickness) solid var(--color-core-accent);
+	--border-ui-message: var(--border-primary);
+	--border-ui-message-buttons: var(--border-secondary);
+	--border-ui-message-danger: var(--border-thickness) solid var(--color-border-ui-danger);
+	--border-ui-message-userinput: var(--border-secondary);
+	--border-ui-message-userinput-focus: var(--border-accent);
+	--border-header-button-impossible: var(--border-thickness) solid var(--color-core-header-button-impossible);
+	--border-chat-input-separator: var(--border-thickness) solid var(--color-border-chat-input-separator);
+	--border-chat-input-textarea: var(--border-thickness) solid var(--color-border-chat-input-textarea);
+	--border-chat-input-textarea-active: var(--border-thickness) solid var(--color-border-chat-input-textarea-active);
+	--border-chat-input-send-button: var(--border-thickness) solid var(--color-core-chat-input-send-button);
+	--border-chat-input-send-button-hover: var(--border-thickness) solid var(--color-core-chat-input-send-button-hover);
+	--border-settings-entry: var(--border-thickness) solid var(--color-border-settings-entry);
+	--border-settings-entry-button: var(--border-thickness) solid var(--color-border-settings-entry-button);
+	--border-settings-entry-button-selected: var(--border-thickness) dashed var(--color-border-settings-entry-button-selected);
+	--border-settings-entry-button-theme-dark: var(--border-thickness) solid var(--color-border-settings-entry-button-theme-dark);
+	--border-settings-entry-button-theme-light: var(--border-thickness) solid var(--color-border-settings-entry-button-theme-light);
+	--border-settings-entry-button-theme-dark-hover: var(--border-thickness) solid var(--color-border-settings-entry-button-theme-dark-hover);
+	--border-settings-entry-button-theme-light-hover: var(--border-thickness) solid var(--color-border-settings-entry-button-theme-light-hover);
+}
+

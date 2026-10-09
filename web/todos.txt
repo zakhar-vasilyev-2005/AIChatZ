@@ -1,0 +1,26 @@
+
+
+
+
+
+contextmenu on sidepane chat
+allow enable/disable `#chat.hide-system-messages` (later)
+message branches (later)
+change definition of "chat emptiness"
+config spellcheck (?)
+make style for message-content
+start/stop/send
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

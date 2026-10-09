@@ -1,0 +1,133 @@
+
+.ui-message.settings-pane-container {
+	width: calc(100% - 1cm);
+	height: calc(100% - 1cm);
+	border: none;
+	padding: 0;
+	gap: 0;
+	background: transparent;
+}
+.settings-pane-header {
+	background: var(--color-bg-ui-message);
+	border: var(--border-ui-message);
+	border-bottom: none;
+	border-radius: 0.4cm 0.4cm 0 0;
+	justify-content: center;
+	padding: 0.1cm 1cm;
+	padding-top: 0.08cm;
+}
+.settings-pane-header .text {
+	color: var(--text-color-settings-pane-text);
+	font-family: var(--font-family-settings-pane-text);
+	font-size: var(--font-size-settings-pane-text);
+	font-weight: var(--font-weight-settings-pane-text);
+	font-style: var(--font-style-settings-pane-text);
+	line-height: var(--line-height-settings-pane-text);
+	text-align: center;
+}
+.settings-pane {
+	background: var(--color-bg-ui-message);
+	border: var(--border-ui-message);
+	border-top: none;
+	border-radius: 0 0 0.4cm 0.4cm;
+	padding: 0 0.5cm;
+	padding-top: 0.025cm;
+	padding-bottom: 0.1cm;
+	gap: 0.1cm;
+}
+.settings-pane-separator {
+	width: 100%;
+	align-self: center;
+	height: 0;
+	border-top: var(--border-ui-message);
+	margin-bottom: 0.1cm;
+}
+.settings-pane .entry {
+	border: var(--border-settings-entry);
+	background: var(--color-bg-settings-entry);
+	border-radius: 0.2cm;
+	padding: 0 0.2cm;
+	gap: 0.2cm;
+	align-items: center;
+}
+.settings-pane .entry:not(:hover) {
+	border-color: transparent;
+	background: transparent;
+}
+.settings-pane .entry .text {
+	color: var(--text-color-settings-entry-text);
+	font-family: var(--font-family-settings-entry-text);
+	font-size: var(--font-size-settings-entry-text);
+	font-weight: var(--font-weight-settings-entry-text);
+	font-style: var(--font-style-settings-entry-text);
+	line-height: var(--line-height-settings-entry-text);
+	margin: 0.05cm 0;
+	margin-right: auto;
+}
+.settings-pane .entry .choosebutton {
+	border-radius: 0.2cm;
+	padding: 0 0.08cm;
+	border: var(--border-settings-entry-button);
+	background: var(--color-bg-settings-entry-button);
+}
+.settings-pane .entry .choosebutton:hover {
+	background: var(--color-bg-settings-entry-button-hover);
+}
+.settings-pane .entry .choosebutton.selected {
+	outline: var(--border-settings-entry-button-selected);
+}
+.settings-pane .entry.lang .choosebutton .text {
+	color: var(--text-color-settings-langbutton-text);
+	font-family: var(--font-family-settings-langbutton-text);
+	font-size: var(--font-size-settings-langbutton-text);
+	font-weight: var(--font-weight-settings-langbutton-text);
+	font-style: var(--font-style-settings-langbutton-text);
+	line-height: var(--line-height-settings-langbutton-text);
+}
+.settings-pane .entry.theme .choosebutton {
+	width: 1.2cm;
+	height: 0.6cm;
+}
+.settings-pane .entry.theme .choosebutton.dark {
+	background: linear-gradient(
+		30deg,
+		var(--color-core-settings-theme-dark-primary) 0%,
+		var(--color-core-settings-theme-dark-primary) 45%,
+		var(--color-core-settings-theme-dark-secondary) 55%,
+		var(--color-core-settings-theme-dark-secondary) 100%
+	);
+	border: var(--border-settings-entry-button-theme-dark);
+}
+.settings-pane .entry.theme .choosebutton.dark:hover {
+	border: var(--border-settings-entry-button-theme-dark-hover);
+}
+.settings-pane .entry.theme .choosebutton.light {
+	background: linear-gradient(
+		30deg,
+		var(--color-core-settings-theme-light-primary) 0%,
+		var(--color-core-settings-theme-light-primary) 45%,
+		var(--color-core-settings-theme-light-secondary) 55%,
+		var(--color-core-settings-theme-light-secondary) 100%
+	);
+	border: var(--border-settings-entry-button-theme-light);
+}
+.settings-pane .entry.theme .choosebutton.light:hover {
+	border: var(--border-settings-entry-button-theme-light-hover);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

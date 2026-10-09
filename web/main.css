@@ -1,0 +1,56 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: all 0.2s ease;
+}
+
+body {width: 100vw !important; height: 100vh !important; overflow-x: hidden; overflow-y: hidden;}
+.disallow-selection {user-select: none;}
+row,.row {display: flex; flex-direction: row; width: 100%;align-items:center;}
+column,.column {display: flex; flex-direction: column; height: 100%;}
+.expand {flex: 1;}
+.button {
+	overflow: hidden;
+	cursor: pointer;
+	flex-shrink: 0;
+}
+.icon {
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	color: inherit;
+}
+.text {
+	font-family: monospace;
+	color: purple;
+	background: transparent;
+	overflow-wrap: break-word;
+	word-break: break-word;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

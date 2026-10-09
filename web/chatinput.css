@@ -1,0 +1,77 @@
+#chat-input {
+	padding: 0.2cm 0.4cm;
+	gap: 0.4cm;
+	flex-shrink: 0;
+	border-top: var(--border-chat-input-separator);
+}
+#chat-input .input-container {
+	border-radius: 0.4cm;
+	border: var(--border-chat-input-textarea);
+	transition: all 0.2s ease, height 0s ease;
+	padding: 0.12cm;
+}
+#chat-input textarea {
+	transition: all 0.2s ease, height 0s ease;
+	resize: none;
+	outline: none;
+	border: none;
+	padding: 0.05cm;
+	color: var(--text-color-chat-input-textarea);
+	font-family: var(--font-family-chat-input-textarea);
+	font-size: var(--font-size-chat-input-textarea);
+	font-weight: var(--font-weight-chat-input-textarea);
+	font-style: var(--font-style-chat-input-textarea);
+	line-height: var(--line-height-chat-input-textarea);
+	overflow-x: hidden;
+	height: 1.5cm;
+}
+#chat-input textarea::placeholder {
+	color: var(--text-color-chat-input-textarea-placeholder);
+	font-family: var(--font-family-chat-input-textarea-placeholder);
+	font-size: var(--font-size-chat-input-textarea-placeholder);
+	font-weight: var(--font-weight-chat-input-textarea-placeholder);
+	font-style: var(--font-style-chat-input-textarea-placeholder);
+	line-height: var(--line-height-chat-input-textarea-placeholder);
+}
+#chat-input .input-container:has(textarea:focus),
+#chat-input .input-container:has(textarea:hover) {
+	border: var(--border-chat-input-textarea-active);
+}
+#chat-input textarea::-webkit-scrollbar {
+	width: 0.3cm;
+	border-radius: 9999px;
+}
+#chat-input textarea::-webkit-scrollbar-track {
+	cursor: pointer;
+	background: var(--color-bg-chat-input-scrollbar);
+	border-radius: 9999px;
+}
+#chat-input textarea::-webkit-scrollbar-thumb {
+	cursor: pointer;
+	background: var(--color-bg-chat-input-scrollbar-thumb);
+	border-radius: 9999px;
+}
+#chat-input textarea::-webkit-scrollbar-thumb:hover {
+	background: var(--color-bg-chat-input-scrollbar-thumb-hover);
+}
+#chat-input .send-button {
+	width: 1cm;
+	height: 1cm;
+	color: var(--color-core-chat-input-send-button);
+	border: var(--border-chat-input-send-button);
+	border-radius: 9999px;
+}
+#chat-input .send-button:hover {
+	border: var(--border-chat-input-send-button-hover);
+	color: var(--color-core-chat-input-send-button-hover);
+}
+::placeholder {
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -webkit-touch-callout: none !important;
+}
+
+input, textarea, [contenteditable="true"] {
+  -webkit-user-select: text;
+  user-select: text;
+}

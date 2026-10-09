@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZV Chat</title>
+	<link rel="stylesheet" href="root_light.css">
+	<link rel="stylesheet" href="root_dark.css">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="uimessage.css">
+	<link rel="stylesheet" href="chatinput.css">
+	<link rel="stylesheet" href="chatmessages.css">
+	<link rel="stylesheet" href="chatcontent.css">
+	<link rel="stylesheet" href="sidepane.css">
+	<link rel="stylesheet" href="appsettings.css">
+</head>
+<body class="row">
+	<column id="sidepane" class="hidden" tabindex="-1">
+		<column class="dropdown" tabindex="-1">
+			<row class="dropdown-item dropdown-header">
+				<row class="dropdown-header-padding">
+					<span class="expand text dropdown-title"></span>
+					<svg class="icon" viewBox="0 0 24 24"><path d="M4 7h16 M4 12 h16 M4 17 h16"/></svg>
+				</row>
+			</row>
+			<row class="dropdown-item dropdown-add-group">
+				<svg class="icon dropdown-item-marker" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg>
+				<span class="expand text"></span>
+			</row>
+		</column>
+		<column id="sidepane-chats-list" class="expand">
+			<div class="blankpane">
+				<div class="blankpane-content">
+					<span class="text"></span>
+				</div>
+			</div>
+		</column>
+	</column>
+	<column class="expand" id="chat">
+		<row id="chat-content-header">
+			<div id="show-sidepane" class="button"><svg class="icon" viewBox="0 0 24 24"><path d="M6 7h12 M6 12 h12 M6 17 h12"/></svg></div>
+			<div id="new-chat" class="button"><svg class="icon" viewBox="0 0 24 24"><path d="M12 6L12 18M6 12L18 12"/></svg></div>
+			<span id="chat-title" class="text"></span>
+			<div id="settings" class="button"><svg class="icon" viewBox="0 0 24 24"><path d="M10 6.8L10.4 4L13.6 4L14 6.8L15.385640646055103 7.6L18.010511776651533 6.546410161513775L19.61051177665153 9.31769145362398L17.3856406460551 11.064101615137755L17.3856406460551 12.664101615137756L19.61051177665153 14.41051177665153L18.010511776651533 17.181793068761735L15.385640646055103 16.12820323027551L14.000000000000002 16.92820323027551L13.600000000000001 19.72820323027551L10.400000000000002 19.72820323027551L10.000000000000002 16.92820323027551L8.614359353944899 16.12820323027551L5.989488223348471 17.18179306876174L4.38948822334847 14.410511776651536L6.614359353944897 12.664101615137758L6.614359353944896 11.064101615137758L4.389488223348468 9.317691453623983L5.989488223348468 6.546410161513778L8.614359353944897 7.600000000000003L9.999999999999998 6.800000000000003"></path></svg></div>
+		</row>
+		<div id="chat-content-container">
+			<div id="chat-content"></div>
+		</div>
+		<row id="chat-input">
+			<row class="input-container expand">
+				<textarea class="expand text"></textarea>
+			</row>
+			<div class="send-button button"><svg class="icon" viewBox="0 0 24 24">
+				<polygon points="6.5,5.5 20,12 6.5,18.5 10,12 6.5,5.5" fill="currentColor"/>
+			</svg></div>
+		</row>
+	</column>
+	<script type="module" src="misc.js"></script>
+	<script type="module" src="chatlist.js"></script>
+	<script type="module" src="groupchooser.js"></script>
+	<script type="module" src="chatselection.js"></script>
+	<script type="module" src="chatmgr.js"></script>
+	<script type="module" src="chatinput.js"></script>
+	<script type="module" src="uimessage.js"></script>
+	<script type="module" src="markdown_parser.js"></script>
+	<script type="module" src="appsettings.js"></script>
+	<script type="module" src="main.js"></script>
+</body>
+</html>
